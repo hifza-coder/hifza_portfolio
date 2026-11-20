@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0d1e" />
+  <title>Hifza Yaseen | AI & Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Color Glows -->
+  <div class="glow-orb orb-violet"></div>
+  <div class="glow-orb orb-cyan"></div>
+  <div class="glow-orb orb-rose"></div>
+
+  <!-- Preloader -->
+  <div class="loader" id="loader">
+    <div class="loader-mark">H<span>.</span></div>
+    <div class="loader-track"><span></span></div>
+    <p>BOOTING INTERACTIVE STUDIO</p>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a class="logo" href="#hero">H<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero">HOME</a>
+      <a href="#stage">LIVE LAB</a>
+      <a href="#statement">VISION</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a href="#contact" class="nav-button">LET'S TALK <span>↗</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO WITH 3D TORUSKNOT + SCROLL ZOOM -->
+    <section class="hero-pin" id="hero">
+      <div class="hero-sticky">
+        <div class="hero-bg-layer" id="heroBgLayer">
+          <canvas id="scene"></canvas>
+          <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-center-stack">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            AI STUDENT & CREATIVE DEVELOPER
+          </div>
+
+          <h1 class="hero-title" id="heroTitle">
+            Hifza <span class="gradient-text">Yaseen.</span>
+          </h1>
+
+          <p class="hero-role">
+            Building with <span id="typing">Artificial Intelligence</span><i></i>
+          </p>
+
+          <p class="hero-subtext">
+            Crafting intelligent systems, neural experiments, and fluid interactive web experiences with clean engineering.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn-primary">Explore Work ↗</a>
+            <a href="#stage" class="btn-glass">Live Motion Stage ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-bottom-bar">
+          <span>SCROLL TO DRIVE MOTION</span>
+          <div class="hero-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+          </div>
+          <span>01 / 04</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SCROLL-EXPANDING LIVE NEURAL CANVAS STAGE -->
+    <section class="zoom-stage" id="stage">
+      <div class="zoom-sticky">
+        <div class="zoom-frame" id="zoomFrame">
+          <canvas id="neuralFieldCanvas"></canvas>
+          <div class="stage-hud-top">
+            <span class="hud-chip">LIVE NEURAL FIELD</span>
+            <span class="hud-metric" id="nodeCounter">140 ACTIVE NODES · SYNCED</span>
+          </div>
+          <div class="zoom-caption">
+            <p class="kicker">REAL-TIME COMPUTATION</p>
+            <h2>Where Data Meets <span class="gradient-text">Living Motion.</span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STATEMENT + SCROLL-SPREAD 3D TILT CARDS -->
+    <section class="statement-section" id="statement">
+      <div class="statement-inner">
+        <p class="kicker">01 — THE PHILOSOPHY</p>
+        <h2 class="statement-headline">
+          I don't just write code.<br />
+          I shape <span class="gradient-text">responsive</span> digital worlds.
+        </h2>
+
+        <div class="fanned-deck" id="fannedDeck">
+          <div class="fan-card tilt-card fan-1">
+            <span class="pill-tag tag-violet">01 · PYTHON & ML</span>
+            <div>
+              <strong>Predictive Models</strong>
+              <p>Data preprocessing, feature patterns & smart forecasting.</p>
+            </div>
+          </div>
+
+          <div class="fan-card tilt-card fan-2">
+            <span class="pill-tag tag-cyan">02 · PYTORCH DL</span>
+            <div>
+              <strong>Neural Networks</strong>
+              <p>Deep learning layers, tensors & model experimentation.</p>
+            </div>
+          </div>
+
+          <div class="fan-card tilt-card fan-3">
+            <span class="pill-tag tag-rose">03 · AI QUIZ APP</span>
+            <div>
+              <strong>Smart Assessments</strong>
+              <p>Dynamic API quizzes, live timers & clean student UX.</p>
+            </div>
+          </div>
+
+          <div class="fan-card tilt-card fan-4">
+            <span class="pill-tag tag-gold">04 · SQL & 3D WEB</span>
+            <div>
+              <strong>Data & Motion</strong>
+              <p>Structured databases paired with smooth scroll craft.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. INTERACTIVE SPLIT SHOWCASE (LIVE CANVASES, NO STOCK IMAGES) -->
+    <section class="showcase-section" id="projects">
+      <div class="section-top">
+        <p class="kicker">02 — SELECTED WORK</p>
+        <h2>Engineered to feel alive.</h2>
+      </div>
+
+      <!-- Project 01: Live Regression / Prediction Wave Canvas -->
+      <article class="split-showcase tilt-card">
+        <div class="split-left">
+          <span class="proj-tag c-violet">PROJECT / 01 · PYTHON & MACHINE LEARNING</span>
+          <h3>AI Prediction System</h3>
+          <p>
+            Interactive predictive modeling workflow built to analyze structured trends, optimize weights, and forecast outcomes with clarity.
+          </p>
+          <div class="chip-row">
+            <span>Python</span><span>Scikit / ML</span><span>Data Pipelines</span>
+          </div>
+          <a href="#contact" class="proj-link">Discuss This Project ↗</a>
+        </div>
+        <div class="split-right box-violet">
+          <canvas id="projCanvas1" class="proj-canvas"></canvas>
+          <div class="live-badge">● LIVE PREDICTION CURVE</div>
+        </div>
+      </article>
+
+      <!-- Project 02: Live Neural Mesh Canvas -->
+      <article class="split-showcase tilt-card">
+        <div class="split-left">
+          <span class="proj-tag c-cyan">PROJECT / 02 · PYTORCH & DEEP LEARNING</span>
+          <h3>Neural Network Model</h3>
+          <p>
+            Deep neural architecture exploring non-linear activations, gradient flow, and high-dimensional representation learning.
+          </p>
+          <div class="chip-row">
+            <span>PyTorch</span><span>ANN / CNN</span><span>Tensors</span>
+          </div>
+          <a href="#contact" class="proj-link">Discuss This Project ↗</a>
+        </div>
+        <div class="split-right box-cyan">
+          <canvas id="projCanvas2" class="proj-canvas"></canvas>
+          <div class="live-badge">● LIVE ACTIVATION MESH</div>
+        </div>
+      </article>
+
+      <!-- Project 03: Live Interactive Quiz Telemetry UI -->
+      <article class="split-showcase tilt-card">
+        <div class="split-left">
+          <span class="proj-tag c-rose">PROJECT / 03 · APPLICATION & AI API</span>
+          <h3>Interactive Quiz App</h3>
+          <p>
+            Engaging quiz experience featuring randomized questions, countdown timers, instant score analytics, and crisp dark/accent styling.
+          </p>
+          <div class="chip-row">
+            <span>AI API</span><span>Quiz Logic</span><span>Interactive UI</span>
+          </div>
+          <a href="#contact" class="proj-link">Discuss This Project ↗</a>
+        </div>
+        <div class="split-right box-rose">
+          <div class="quiz-mockup" id="quizDemo">
+            <div class="qm-header">
+              <span>QUIZ ENGINE · LIVE DEMO</span>
+              <span class="qm-score" id="qmScore">SCORE: 85%</span>
+            </div>
+            <p class="qm-q" id="qmQuestion">Which activation function introduces smooth non-linearity in neural layers?</p>
+            <div class="qm-options" id="qmOptions">
+              <button type="button" class="qm-opt active-opt" data-acc="92%">GELU / ReLU</button>
+              <button type="button" class="qm-opt" data-acc="78%">Static Linear</button>
+              <button type="button" class="qm-opt" data-acc="88%">Step Threshold</button>
+            </div>
+            <div class="qm-bar-track">
+              <div class="qm-bar-fill" id="qmBar"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 5. ANIMATED COUNTERS + EDITORIAL SUMMARY -->
+    <section class="stats-editorial">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-num"><span class="counter" data-target="12">0</span><span class="c-violet">+</span></div>
+          <small>PROJECTS & EXPERIMENTS</small>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num"><span class="counter" data-target="4">0</span><span class="c-cyan">+</span></div>
+          <small>AI & DEV SPECIALTIES</small>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num"><span class="counter" data-target="100">0</span><span class="c-gold">%</span></div>
+          <small>CURIOSITY & EXECUTION</small>
+        </div>
+      </div>
+
+      <div class="editorial-copy">
+        <p>
+          An AI student passionate about turning algorithms, SQL data, and interactive motion into websites and apps that feel sharp, modern, and memorable.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section class="contact-band" id="contact">
+      <p class="kicker">03 — LET'S CONNECT</p>
+      <h2>Have an idea?<br /><span class="gradient-text">Let's build something bold.</span></h2>
+      <p class="contact-sub">Available for AI collaborations, creative web builds, and exciting projects.</p>
+      <a href="mailto:your-email@example.com" class="btn-primary">Say Hello ↗</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="logo" href="#hero">H<span>.</span></a>
+    <p>© 2026 Hifza Yaseen · Built with curiosity & code.</p>
+    <a href="#hero">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- Lenis + GSAP + ScrollTrigger -->
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
